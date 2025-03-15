@@ -57,14 +57,11 @@ export const About = () => {
                     <h3 className="text-xl font-bold mb-4">💼 Work Experience</h3>
                     <div className="space-y-4 text-gray-300">
                         <div>
-                            <h4 className="font-semibold"> ABC (2025-present)</h4>
-                            <p>kakakaka</p>
+                            <h4 className="font-semibold"> Student (2022-present)</h4>
+                            <p>Journey to be a full stack developer</p>
                         </div>
 
-                        <div>
-                            <h4 className="font-semibold"> DCF (2025 summer)</h4>
-                            <p>kakakaka</p>
-                        </div>
+
 
                     </div>
                 </div>
