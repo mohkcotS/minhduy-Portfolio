@@ -47,7 +47,7 @@ export const ProfileCard = () => {
           <FaFacebook className="h-6 w-6 sm:h-8 sm:w-8 hover:scale-110" />
         </a>
         <a
-          href="https://github.com/mohkcotS"
+          href="https://www.linkedin.com/in/l%C3%AA-minh-duy-505021364/"
           target="_blank"
           rel="noopener noreferrer"
         >
