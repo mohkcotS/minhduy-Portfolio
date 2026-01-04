@@ -11,7 +11,7 @@ export const ProfileCard = () => {
           <div className="w-full h-full rounded-full overflow-hidden bg-white">
             <img
               src={personalImage}
-              alt="Avatar"
+              alt="Picture"
               className="w-full h-full object-cover object-[50%_5%]"
             />
           </div>
