@@ -1,41 +1,41 @@
-const webImages = import.meta.glob("../src/assets/projects/web/*.png", {
-  eager: true,
+const webImages = import.meta.glob("../src/assets/projects/web/*.webp", {
+  eager: true,query: '?url',import: 'default',
 });
 
-export const webImg = Object.values(webImages).map((img) => img.default);
+export const webImg = Object.values(webImages)
 
-const pdmImages = import.meta.glob("../src/assets/projects/pdm/*.png", {
-  eager: true,
+const pdmImages = import.meta.glob("../src/assets/projects/pdm/*.webp", {
+  eager: true,query: '?url',import: 'default',
 });
 
-export const pdmImg = Object.values(pdmImages).map((img) => img.default);
+export const pdmImg = Object.values(pdmImages)
 
-const cgImages = import.meta.glob("../src/assets/projects/cg/*.png", {
-  eager: true,
+const cgImages = import.meta.glob("../src/assets/projects/cg/*.webp", {
+  eager: true,query: '?url',import: 'default',
 });
 
-export const cgImg = Object.values(cgImages).map((img) => img.default);
+export const cgImg = Object.values(cgImages)
 
-const dsaImages = import.meta.glob("../src/assets/projects/dsa/*.png", {
-  eager: true,
+const dsaImages = import.meta.glob("../src/assets/projects/dsa/*.webp", {
+  eager: true,query: '?url',import: 'default',
 });
 
-export const dsaImg = Object.values(dsaImages).map((img) => img.default);
+export const dsaImg = Object.values(dsaImages)
 
-const ooadImages = import.meta.glob("../src/assets/projects/ooad/*.png", {
-  eager: true,
+const ooadImages = import.meta.glob("../src/assets/projects/ooad/*.webp", {
+  eager: true,query: '?url',import: 'default',
 });
 
-export const ooadImg = Object.values(ooadImages).map((img) => img.default);
+export const ooadImg = Object.values(ooadImages)
 
-const oopImages = import.meta.glob("../src/assets/projects/oop/*.png", {
-  eager: true,
+const oopImages = import.meta.glob("../src/assets/projects/oop/*.webp", {
+  eager: true,query: '?url',import: 'default',
 });
 
-export const oopImg = Object.values(oopImages).map((img) => img.default);
+export const oopImg = Object.values(oopImages)
 
-const pplImages = import.meta.glob("../src/assets/projects/ppl/*.png", {
-  eager: true,
+const pplImages = import.meta.glob("../src/assets/projects/ppl/*.webp", {
+  eager: true,query: '?url',import: 'default',
 });
 
-export const pplImg = Object.values(pplImages).map((img) => img.default);
+export const pplImg = Object.values(pplImages)

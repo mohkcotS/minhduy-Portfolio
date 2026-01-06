@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 
-
 export const ProjectCard = ({ project }) => {
   const [currentImage, setCurrentImage] = useState(0);
 
@@ -8,32 +7,35 @@ export const ProjectCard = ({ project }) => {
     if (!project?.images?.length) return;
 
     const interval = setInterval(() => {
-      setCurrentImage((prev) =>
-        (prev + 1) % project.images.length
-      );
+      setCurrentImage((prev) => (prev + 1) % project.images.length);
     }, 3000);
 
     return () => clearInterval(interval);
   }, [project.images]);
 
   return (
-    <div className="rounded-xl shadow-lg shadow-violet-300/50 w-100 md:w-120 lg:w-full h-132 md:h-160 flex flex-col"> 
+    <div className="rounded-xl shadow-lg shadow-violet-300/50 w-100 md:w-120 lg:w-full h-132 md:h-160 flex flex-col">
       <div className="w-full overflow-hidden rounded-t-xl shrink-0">
         <img
           src={project.images[currentImage]}
-          alt="Avatar"
+          alt="Project Image"
+          loading="lazy"
+          decoding="async"
           className="w-full h-44 md:h-56 xl:h-68"
         />
       </div>
 
       <div className="flex flex-col p-6 flex-grow">
-        
-        <div className="mb-4"> 
+        <div className="mb-4">
           <h3 className="text-xl font-bold text-amber-400">{project?.name}</h3>
-          <h5 className="text-gray-400 mb-4 text-sm md:text-base">{project.type}</h5>
-          
-          <p className="mb-4 text-gray-200 text-sm md:text-base">{project.description}</p>
-          
+          <h5 className="text-gray-400 mb-4 text-sm md:text-base">
+            {project.type}
+          </h5>
+
+          <p className="mb-4 text-gray-200 text-sm md:text-base">
+            {project.description}
+          </p>
+
           <div className="flex flex-wrap gap-2">
             {project?.technique?.map((tech, key) => (
               <span
@@ -55,7 +57,6 @@ export const ProjectCard = ({ project }) => {
             </div>
           </a>
         </div>
-
       </div>
     </div>
   );
