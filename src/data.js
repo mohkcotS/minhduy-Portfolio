@@ -1,4 +1,12 @@
-import { webImg, pdmImg, oopImg, pplImg, dsaImg, cgImg, ooadImg } from "./imageData";
+import {
+  webImg,
+  pdmImg,
+  oopImg,
+  pplImg,
+  dsaImg,
+  cgImg,
+  ooadImg,
+} from "./imageData";
 
 export const experiences = [
   {
@@ -46,8 +54,16 @@ export const projects = [
     track updates accurately, and maintain an organized digital catalog that supports daily library operations and improves overall data 
     management.`,
     type: "Web Application",
-    technique: ["React","TypeScript","Tailwind CSS","Java","Springboot","PostgreSQL","RESTful API"],
-    link: "https://github.com/mohkcotS/Project_DSA_Battleship",
+    technique: [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Java",
+      "Springboot",
+      "PostgreSQL",
+      "RESTful API",
+    ],
+    link: "https://github.com/mohkcotS/Project_PDM_LibraryManagement",
     images: pdmImg,
   },
   {
@@ -55,7 +71,17 @@ export const projects = [
     description: `A Restaurant Management System that streamlines the ordering,kitchen processing, and payment workflow designed 
                 to support daily restaurant operations efficiently.`,
     type: "Web Application",
-    technique: ["React","JavaScript","Tailwind CSS","Node.js","Express.js","MySQL","RESTful API","JWT","WebSocket"],
+    technique: [
+      "React",
+      "JavaScript",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MySQL",
+      "RESTful API",
+      "JWT",
+      "WebSocket",
+    ],
     link: "https://github.com/mohkcotS/Project_WEB_RestaurantManagementSystem",
     images: webImg,
   },
@@ -65,7 +91,7 @@ export const projects = [
     The system includes a size recommendation feature that suggests suitable clothing sizes based on user information such as height, 
     weight, and gender, aiming to enhance user experience and support better purchasing decisions.`,
     type: "Web Application",
-    technique: ["React","JavaScript","Tailwind CSS"],
+    technique: ["React", "JavaScript", "Tailwind CSS"],
     link: "https://github.com/mohkcotS/Project_OOAD_OnlineClothesShop",
     images: ooadImg,
   },
@@ -75,7 +101,7 @@ export const projects = [
     Each correct input fires weapons or maneuvers the ship, while errors slow progress. The parser provides real-time feedback, turning 
     coding accuracy into gameplay strategy, blending programming skills with fast-paced action.`,
     type: "Game Application",
-    technique: ["Python","Antlr"],
+    technique: ["Python", "Antlr"],
     link: "https://github.com/mohkcotS/Project_PPL_PewPew",
     images: pplImg,
   },
@@ -85,7 +111,7 @@ export const projects = [
     in 3D. Users can navigate the scene with camera controls, observe pre-programmed visitor paths, and experience realistic lighting and 
     shading effects, providing an interactive visualization of the gate’s architecture and environment.`,
     type: "Graphics Simulation",
-    technique: ["Python","py3d","pyOpenGL"],
+    technique: ["Python", "py3d", "pyOpenGL"],
     link: "https://github.com/mohkcotS/Project_CG_DoanMonGateSimulation",
     images: cgImg,
   },
